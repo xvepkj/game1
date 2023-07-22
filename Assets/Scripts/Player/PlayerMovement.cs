@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]private LayerMask groundLayer;
+    [SerializeField] private LayerMask movingPlatformLayer;
     [SerializeField]private float speed; 
     private Rigidbody2D body;
     private BoxCollider2D boxCollider;
@@ -42,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
                 SoundManager.instance.PlaySound(jumpSound);
             }
         }
+
 
         // Set animator parameters 
         anim.SetBool("run", horizontalInput != 0);
