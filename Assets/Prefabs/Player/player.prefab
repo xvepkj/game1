@@ -200,8 +200,13 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  attackRange: 0.7
   fireballSound: {fileID: 8300000, guid: 8ad611a67cf25134ea2ae6563f761411, type: 3}
   meleeSound: {fileID: 8300000, guid: 00ba1dea56da8ed41bd3752b713cdfe9, type: 3}
+  attackPoint: {fileID: 0}
 --- !u!114 &8951037086345205707
 MonoBehaviour:
   m_ObjectHideFlags: 0

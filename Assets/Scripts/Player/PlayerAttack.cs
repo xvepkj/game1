@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    [Header("Fireball")]
     [SerializeField] private float attackCooldown;
     [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject[] fireballs;
 
+    [Header("melee attack params")] 
+    [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] private float attackRange;
+
     [Header("Sounds")]
     [SerializeField] private AudioClip fireballSound;
     [SerializeField] private AudioClip meleeSound;
+    [SerializeField] private Transform attackPoint;
 
     private Animator anim;
     private PlayerMovement playerMovement;
@@ -61,5 +67,19 @@ public class PlayerAttack : MonoBehaviour
     private void meleeAttack()
     {
         anim.SetTrigger("meleeAttack");
+
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
+
+        foreach(CircleCollider2D enemy in hitEnemies)
+        {
+            enemy.GetComponent<Health>().TakeDamage(2.5f);
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (firePoint == null) return;
+
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 }

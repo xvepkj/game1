@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+#if UNITY_EDITOR
+
 using UnityEditor.AssetImporters;
+
+#endif
 using UnityEngine;
 
 public class EnemyProjectile : EnemyDamage
