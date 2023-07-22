@@ -10598,10 +10598,6 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6010916076548557050, guid: abf357faab79eab47abffe30155bd239, type: 3}
-      propertyPath: damage
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 6010916076548557050, guid: abf357faab79eab47abffe30155bd239, type: 3}
       propertyPath: leftEdge
       value: 
       objectReference: {fileID: 251032045}
