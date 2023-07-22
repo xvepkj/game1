@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,8 +19,8 @@ public class SoundManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-        } 
-        else if(instance != null && instance != this) 
+        }
+        else if (instance != null && instance != this)
             Destroy(gameObject);
 
         ChangeMusicVolume(0);

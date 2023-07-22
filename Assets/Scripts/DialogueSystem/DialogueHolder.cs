@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,7 +12,7 @@ namespace DialogueSystem
             StartCoroutine(dialogueSequence());
         }
 
-        private IEnumerator  dialogueSequence()
+        private IEnumerator dialogueSequence()
         {
             for (int i = 0; i < transform.childCount; i++)
             {

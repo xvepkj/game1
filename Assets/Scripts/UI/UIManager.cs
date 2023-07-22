@@ -21,9 +21,8 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        if (pauseScreen.activeInHierarchy)
-            PauseGame(false);
-        else PauseGame(true);
+        if(Input.GetKeyUp(KeyCode.Escape)) 
+            PauseGame(!pauseScreen.activeInHierarchy);
     }
 
     public void GameOver()
@@ -45,7 +44,7 @@ public class UIManager : MonoBehaviour
         
     }
 
-    public void Quitange ()
+    public void QuitGame ()
     {
         Application.Quit();
 
