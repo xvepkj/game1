@@ -11,6 +11,9 @@ public class Spikehead : EnemyDamage
     [SerializeField] private float checkDelay;
     [SerializeField] private LayerMask playerLayer;
 
+    [SerializeField] private Transform leftEdge;
+    [SerializeField] private Transform rightEdge;
+
     private float checkTimer;
     private Vector3 destination;
     private bool attacking;
@@ -22,14 +25,28 @@ public class Spikehead : EnemyDamage
 
     private void Update()
     {
-        if(attacking)
-            transform.Translate(destination * Time.deltaTime * speed);
+        
+        if (attacking)
+        {   
+            Vector3 pos = transform.position;
+
+            Vector3 trans = destination * speed * Time.deltaTime;
+
+            if (transform.position.x + trans.x < leftEdge.position.x) pos.x = leftEdge.position.x;
+            else if (transform.position.x + trans.x > rightEdge.position.x) pos.x = rightEdge.position.x;
+            else pos.x += trans.x;
+
+            pos.y += trans.y;
+            pos.z += trans.z;
+
+            transform.position = pos;
+        }
         else
         {
             checkTimer += Time.deltaTime;
-            if(checkTimer > checkDelay)
+            if (checkTimer > checkDelay)
                 CheckForPlayer();
-            
+
         }
     }
 
