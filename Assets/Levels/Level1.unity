@@ -8440,10 +8440,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 389396574}
     m_Modifications:
+    - target: {fileID: 9019260845340166648, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019260845340166648, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1582655358, guid: f5c18e9d263706b4da0e6fa8f667a0fe, type: 3}
+    - target: {fileID: 9019260845340166650, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019260845340166650, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.44
+      objectReference: {fileID: 0}
     - target: {fileID: 9019260845340166651, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 22100000, guid: abd16fe70612eb64ebeec53e0092465a, type: 2}
+      objectReference: {fileID: 22100000, guid: bb4678f8252d9c540a5cbab44185ee27, type: 2}
+    - target: {fileID: 9019260845340166653, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
+      propertyPath: iFramesDuration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019260845340166653, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
+      propertyPath: numberOfflashes
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 9019260845340166654, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
       propertyPath: m_Name
       value: MeleeEnemy
@@ -8453,12 +8477,24 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9019260845340166655, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019260845340166655, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019260845340166655, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019260845340166655, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.97
+      value: -0.74
       objectReference: {fileID: 0}
     - target: {fileID: 9019260845340166655, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.52
+      value: -0.43
       objectReference: {fileID: 0}
     - target: {fileID: 9019260845340166655, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12671,11 +12707,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8951037086345205702, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.93
+      value: 30.14
       objectReference: {fileID: 0}
     - target: {fileID: 8951037086345205702, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.04
+      value: 13.01
       objectReference: {fileID: 0}
     - target: {fileID: 8951037086345205702, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -23676,6 +23712,10 @@ PrefabInstance:
     - target: {fileID: 5172494151721072267, guid: c53df251d379e2541bd5c6173d5016ca, type: 3}
       propertyPath: m_Name
       value: ArrowTrap
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172494151721072267, guid: c53df251d379e2541bd5c6173d5016ca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5172494151721072277, guid: c53df251d379e2541bd5c6173d5016ca, type: 3}
       propertyPath: m_RootOrder
