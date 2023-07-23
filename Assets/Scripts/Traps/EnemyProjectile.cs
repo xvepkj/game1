@@ -39,7 +39,6 @@ public class EnemyProjectile : EnemyDamage
 
         if(enemy != null && Mathf.Sign(speed) != Mathf.Sign(enemy.transform.localScale.x))
         {
-            Debug.Log(Mathf.Sign(enemy.transform.localScale.x));
             transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
             speed = speed * -1;
         }
