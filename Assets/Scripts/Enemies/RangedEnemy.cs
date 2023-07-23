@@ -80,7 +80,7 @@ public class RangedEnemy : MonoBehaviour
     {
         for (int i = 0; i < fireballs.Length; i++)
         {
-            if (fireballs[i].activeInHierarchy) return i;
+            if (!fireballs[i].activeInHierarchy) return i;
         }
         return 0;
     }
