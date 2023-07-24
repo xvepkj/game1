@@ -35,6 +35,11 @@ public class UIManager : MonoBehaviour
         SoundManager.instance.PlaySound(gameOverSound);
     }
 
+    public void StartGame()
+    {
+        SceneManager.LoadScene(1);
+    }
+
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
