@@ -15,7 +15,7 @@ public class Spell : MonoBehaviour
     public void AttackPlayer()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(transform.position, new Vector2(2, 3), 0, Vector2.down, 0.1f, playerMask);
-        if (raycastHit.collider.tag == "Player")
+        if (raycastHit.collider != null && raycastHit.collider.tag == "Player")
         {
             raycastHit.collider.GetComponent<Health>().TakeDamage(2.5f);
         }
