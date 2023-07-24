@@ -7169,6 +7169,50 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &460962735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 460962736}
+  - component: {fileID: 460962737}
+  m_Layer: 0
+  m_Name: NextLevelLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &460962736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460962735}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2146996598}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &460962737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460962735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 451dd3cc6cf9af94d85a14b644622553, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &467211931
 GameObject:
   m_ObjectHideFlags: 0
@@ -28575,7 +28619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   holder: {fileID: 210407439}
   anim: {fileID: 1841816305}
-  ghostPref: ghostSeen
+  ghostPref: ghostSeen33
 --- !u!1 &1842107257
 GameObject:
   m_ObjectHideFlags: 0
@@ -32327,6 +32371,7 @@ Transform:
   - {fileID: 1370316369}
   - {fileID: 2075669066}
   - {fileID: 429846084}
+  - {fileID: 460962736}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -32437,7 +32482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 412763adc4dd629488fecee8716c2211, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 20
+  startingHealth: 2.5
   iFramesDuration: 0
   numberOfflashes: 0
   components:
@@ -32600,7 +32645,7 @@ MonoBehaviour:
   colliderDistance: 0.35
   damage: 1.25
   boxCollider: {fileID: 371115337647344869}
-  dialoguePref: dialogueMiniBoss88
+  dialoguePref: dialogueMiniBoss889631
   holder: {fileID: 62006533}
 --- !u!1001 &5164254656220977981
 PrefabInstance:

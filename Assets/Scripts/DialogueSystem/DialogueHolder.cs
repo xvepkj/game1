@@ -9,10 +9,11 @@ namespace DialogueSystem
 
         [SerializeField] private GameObject player;
 
-        public bool dialoguesOver = false;
+        public bool dialoguesOver = true;
 
         public IEnumerator dialogueSequence()
         {
+            dialoguesOver = false;
             gameObject.SetActive(true);
             player.GetComponent<Animator>().SetBool("run", false);
             player.GetComponent<PlayerMovement>().enabled = false;

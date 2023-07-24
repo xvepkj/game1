@@ -2,6 +2,7 @@ using DialogueSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MiniBoss : MonoBehaviour
 {
@@ -42,13 +43,14 @@ public class MiniBoss : MonoBehaviour
         {
             if (PlayerPrefs.GetInt(dialoguePref, 0) == 0)
             {
-                gameObject.GetComponent<MeleeEnemy>().enabled = false;  
+                gameObject.GetComponent<MeleeEnemy>().enabled = false;
                 PlayerPrefs.SetInt(dialoguePref, 1);
-                StartCoroutine(holder.dialogueSequence());
+                StartCoroutine(holder.dialogueSequence());         
             }
-            else if (holder.dialoguesOver && cooldownTimer >= attackCooldown)
+            else if ((holder.dialoguesOver || PlayerPrefs.GetInt(dialoguePref) == 2) && cooldownTimer >= attackCooldown)
             {
-                if(!gameObject.GetComponent<MeleeEnemy>().enabled) gameObject.GetComponent<MeleeEnemy>().enabled = true;
+                PlayerPrefs.SetInt(dialoguePref, 2);
+                if (!gameObject.GetComponent<MeleeEnemy>().enabled) gameObject.GetComponent<MeleeEnemy>().enabled = true;
                 cooldownTimer = 0;
                 StartCoroutine(spellAttack());
             }
@@ -91,5 +93,10 @@ public class MiniBoss : MonoBehaviour
             if (!spells[i].activeInHierarchy) return i;
         }
         return 0;
+    }
+
+    public void LoadNextLevel()
+    {
+        NextLevelLoader.instance.GoToNextLevel();
     }
 }
