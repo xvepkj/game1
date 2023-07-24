@@ -1,3 +1,4 @@
+using DialogueSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,6 +19,10 @@ public class MiniBoss : MonoBehaviour
     [SerializeField] private BoxCollider2D boxCollider;
 
 
+    [Header("Dialog Parameters")]
+    [SerializeField] private string dialoguePref;
+    [SerializeField] private DialogueHolder holder;
+
     private float cooldownTimer = Mathf.Infinity;
 
 
@@ -33,10 +38,20 @@ public class MiniBoss : MonoBehaviour
 
         cooldownTimer += Time.deltaTime;
 
-        if (PlayerInSight() && cooldownTimer >= attackCooldown)
+        if (PlayerInSight())
         {
-            cooldownTimer = 0;
-            StartCoroutine(spellAttack());
+            if (PlayerPrefs.GetInt(dialoguePref, 0) == 0)
+            {
+                gameObject.GetComponent<MeleeEnemy>().enabled = false;  
+                PlayerPrefs.SetInt(dialoguePref, 1);
+                StartCoroutine(holder.dialogueSequence());
+            }
+            else if (holder.dialoguesOver && cooldownTimer >= attackCooldown)
+            {
+                if(!gameObject.GetComponent<MeleeEnemy>().enabled) gameObject.GetComponent<MeleeEnemy>().enabled = true;
+                cooldownTimer = 0;
+                StartCoroutine(spellAttack());
+            }
         }
     }
 

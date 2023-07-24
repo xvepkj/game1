@@ -14,6 +14,7 @@ namespace DialogueSystem
         public IEnumerator dialogueSequence()
         {
             gameObject.SetActive(true);
+            player.GetComponent<Animator>().SetBool("run", false);
             player.GetComponent<PlayerMovement>().enabled = false;
             player.GetComponent<PlayerAttack>().enabled = false;
 
