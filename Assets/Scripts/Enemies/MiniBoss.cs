@@ -97,6 +97,7 @@ public class MiniBoss : MonoBehaviour
 
     public void LoadNextLevel()
     {
+        PlayerPrefs.SetInt("level", 2);
         NextLevelLoader.instance.GoToNextLevel();
     }
 }

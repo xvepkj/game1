@@ -36,8 +36,9 @@ public class UIManager : MonoBehaviour
     }
 
     public void StartGame()
-    {
-        SceneManager.LoadScene(1);
+    { 
+        int level = PlayerPrefs.GetInt("level", 1);
+        SceneManager.LoadScene(level);
     }
 
     public void Restart()
