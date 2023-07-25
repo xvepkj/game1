@@ -36,6 +36,11 @@ public class Boss : MonoBehaviour
     private void Update()
     {
 
+        if (spellPoint.position.x > transform.position.x && transform.localScale.x > 0)
+            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+        if (spellPoint.position.x < gameObject.transform.position.x && gameObject.transform.localScale.x < 0)
+            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+
         cooldownTimer += Time.deltaTime;
 
         if (PlayerInSight())
@@ -73,6 +78,7 @@ public class Boss : MonoBehaviour
     private IEnumerator waitAndSpell(Transform currentPos)
     {
         yield return new WaitForSeconds(spellDelay);
+
         anim.SetTrigger("rangedAttack");
         int spellIndex = FindSpell();
         spells[spellIndex].transform.position = currentPos.position;
@@ -93,7 +99,6 @@ public class Boss : MonoBehaviour
         while (true)
         {
             int spellIndex = Random.Range(0, spells.Length);
-            Debug.Log(spellIndex);
             if (!spells[spellIndex].activeInHierarchy) return spellIndex;
         }
         return 0;

@@ -94,7 +94,7 @@ public class Health : MonoBehaviour
             component.enabled = true;
     }
 
-    private void Deactivate()
+    public void Deactivate()
     {
         gameObject.SetActive(false);
     }
