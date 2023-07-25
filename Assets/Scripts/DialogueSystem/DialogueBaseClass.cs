@@ -7,7 +7,9 @@ namespace DialogueSystem
 {
     public class DialogueBaseClass : MonoBehaviour
     {
-        public bool finished { get; private set; }
+        public bool finished { get; protected set; }
+
+        private bool Skip = false;
         protected IEnumerator WriteText(string input, Text textholder, Color textColor, Font textFont, float delay, AudioClip sound, float delayBetweenLines)
         {
             textholder.color = textColor;
@@ -16,7 +18,7 @@ namespace DialogueSystem
             {
                 textholder.text += input[i];
                 SoundManager.instance.PlaySound(sound);
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(delay);
             }
 
             //yield return new WaitForSeconds(delayBetweenLines);

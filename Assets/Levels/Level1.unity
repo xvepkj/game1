@@ -7071,6 +7071,7 @@ Transform:
   - {fileID: 694542697}
   - {fileID: 371115337647344864}
   - {fileID: 2011246414}
+  - {fileID: 1133450401}
   m_Father: {fileID: 2146996598}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10732,7 +10733,7 @@ MonoBehaviour:
   input: Haha! You are not worthy!
   textColor: {r: 0, g: 0, b: 0, a: 0.7294118}
   textFont: {fileID: 12800000, guid: a74186ed540e95d488f58d27e7a3e69b, type: 3}
-  delay: 0.1
+  delay: 0.05
   delayBetweenLines: 1
   textSound: {fileID: 0}
   characterSprite: {fileID: 21300000, guid: a1d00767ef20ac04cb6573f5d75223e9, type: 3}
@@ -14928,7 +14929,7 @@ MonoBehaviour:
   input: 'Let''s see it then '
   textColor: {r: 0, g: 0, b: 0, a: 0.7294118}
   textFont: {fileID: 12800000, guid: a74186ed540e95d488f58d27e7a3e69b, type: 3}
-  delay: 0.1
+  delay: 0.05
   delayBetweenLines: 1
   textSound: {fileID: 0}
   characterSprite: {fileID: 21300000, guid: a1d00767ef20ac04cb6573f5d75223e9, type: 3}
@@ -17395,7 +17396,7 @@ MonoBehaviour:
   input: You don't know my strength!
   textColor: {r: 0, g: 0, b: 0, a: 0.7294118}
   textFont: {fileID: 12800000, guid: a74186ed540e95d488f58d27e7a3e69b, type: 3}
-  delay: 0.1
+  delay: 0.05
   delayBetweenLines: 1
   textSound: {fileID: 0}
   characterSprite: {fileID: 21300000, guid: 52c8e5f11b434df47bd040eda7564a8f, type: 3}
@@ -19442,13 +19443,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133450398}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 73.229996, y: 22.53, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.596863, y: -0.3025608, z: 5.07304}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 429846084}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1137044712
 GameObject:
@@ -20119,7 +20120,7 @@ MonoBehaviour:
   input: Where is the demon lord you speak of?
   textColor: {r: 0, g: 0, b: 0, a: 0.7294118}
   textFont: {fileID: 12800000, guid: a74186ed540e95d488f58d27e7a3e69b, type: 3}
-  delay: 0.1
+  delay: 0.05
   delayBetweenLines: 1
   textSound: {fileID: 0}
   characterSprite: {fileID: 21300000, guid: 52c8e5f11b434df47bd040eda7564a8f, type: 3}
@@ -28451,7 +28452,7 @@ MonoBehaviour:
   input: Hello Ghost! Why are you here?
   textColor: {r: 0, g: 0, b: 0, a: 0.7294118}
   textFont: {fileID: 12800000, guid: a74186ed540e95d488f58d27e7a3e69b, type: 3}
-  delay: 0.1
+  delay: 0.05
   delayBetweenLines: 1
   textSound: {fileID: 0}
   characterSprite: {fileID: 21300000, guid: 52c8e5f11b434df47bd040eda7564a8f, type: 3}
@@ -29532,7 +29533,7 @@ MonoBehaviour:
   input: Tell me where is your boss!
   textColor: {r: 0, g: 0, b: 0, a: 0.7294118}
   textFont: {fileID: 12800000, guid: a74186ed540e95d488f58d27e7a3e69b, type: 3}
-  delay: 0.1
+  delay: 0.05
   delayBetweenLines: 1
   textSound: {fileID: 0}
   characterSprite: {fileID: 21300000, guid: 52c8e5f11b434df47bd040eda7564a8f, type: 3}
@@ -30299,7 +30300,7 @@ MonoBehaviour:
     it'
   textColor: {r: 0, g: 0, b: 0, a: 0.7294118}
   textFont: {fileID: 12800000, guid: a74186ed540e95d488f58d27e7a3e69b, type: 3}
-  delay: 0.1
+  delay: 0.05
   delayBetweenLines: 1
   textSound: {fileID: 0}
   characterSprite: {fileID: 21300000, guid: 12e28719cfa94634bac893e98cb233e6, type: 3}
@@ -34080,7 +34081,7 @@ MonoBehaviour:
   input: Find and defeat his soldiers and he will be sure to appear, Be careful warrior!
   textColor: {r: 0, g: 0, b: 0, a: 0.7294118}
   textFont: {fileID: 12800000, guid: a74186ed540e95d488f58d27e7a3e69b, type: 3}
-  delay: 0.1
+  delay: 0.05
   delayBetweenLines: 1
   textSound: {fileID: 0}
   characterSprite: {fileID: 21300000, guid: 12e28719cfa94634bac893e98cb233e6, type: 3}
