@@ -36,8 +36,16 @@ public class PlayerRespawn : MonoBehaviour
         if(collision.transform.tag == "Checkpoint")
         {
             currentCheckpoint = collision.transform;
+            SaveCheckPointToPref(currentCheckpoint.position);
             SoundManager.instance.PlaySound(checkPointSound);
             collision.GetComponent<Collider2D>().enabled = false;
         }
+    }
+
+    private void SaveCheckPointToPref(Vector3 checkPointPos)
+    {
+        PlayerPrefs.SetFloat("checkpointX", checkPointPos.x);  
+        PlayerPrefs.SetFloat("checkpointY", checkPointPos.y);
+        PlayerPrefs.SetFloat("checkpointZ", checkPointPos.z);
     }
 }

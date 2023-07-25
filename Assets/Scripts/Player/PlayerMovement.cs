@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -20,6 +21,16 @@ public class PlayerMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
+
+        SetPlayerPosition();
+    }
+
+    private void SetPlayerPosition()
+    {
+        if(SceneManager.GetActiveScene().buildIndex == 1 && PlayerPrefs.GetFloat("checkpointX", 0f) != 0f)
+        {
+            transform.position = new Vector3(PlayerPrefs.GetFloat("checkpointX", 0f), PlayerPrefs.GetFloat("checkpointY", 0f), PlayerPrefs.GetFloat("checkpointZ", 0f));
+        }
     }
 
     private void Update() {
