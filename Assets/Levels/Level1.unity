@@ -16834,11 +16834,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8951037086345205702, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 61.35
+      value: 27.64
       objectReference: {fileID: 0}
     - target: {fileID: 8951037086345205702, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 21.56
+      value: 12.98
       objectReference: {fileID: 0}
     - target: {fileID: 8951037086345205702, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16920,6 +16920,10 @@ PrefabInstance:
       propertyPath: fireballs.Array.data[8]
       value: 
       objectReference: {fileID: 2046523879}
+    - target: {fileID: 8951037086345205707, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
+      propertyPath: startingHealth
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8951037087455931557, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.548
