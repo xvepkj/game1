@@ -81,4 +81,9 @@ public class UIManager : MonoBehaviour
     {
         SoundManager.instance.ChangeMusicVolume(0.2f);
     }
+
+    public void ClearProgress()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 }

@@ -3706,7 +3706,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1180525073}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: PauseGame
         m_Mode: 6
@@ -5729,7 +5729,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1180525073}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: SoundVolume
         m_Mode: 1
@@ -6391,7 +6391,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1180525073}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: MusicVolume
         m_Mode: 1
@@ -10467,7 +10467,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1180525073}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: MainMenu
         m_Mode: 1
@@ -11226,7 +11226,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1180525073}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -12529,7 +12529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 412763adc4dd629488fecee8716c2211, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 40
+  startingHealth: 50
   iFramesDuration: 0
   numberOfflashes: 0
   components:
