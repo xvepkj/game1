@@ -13,6 +13,7 @@ public class Boss : MonoBehaviour
     [SerializeField] private float attackCooldown;
     [SerializeField] private float range;
     [SerializeField] private GameObject[] spells;
+    [SerializeField] private GameObject healthBar;
 
     [Header("Collider Parameters")]
     [SerializeField] private float colliderDistance;
@@ -102,5 +103,10 @@ public class Boss : MonoBehaviour
             if (!spells[spellIndex].activeInHierarchy) return spellIndex;
         }
         return 0;
+    }
+
+    public void DisableComponents()
+    {
+        healthBar.SetActive(false);
     }
 }
