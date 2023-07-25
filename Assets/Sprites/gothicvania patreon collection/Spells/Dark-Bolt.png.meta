@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3cab78de0d3c3e541af4b4bdb3413c86
+guid: e6dc92970ccdc3b4a98cdef809700015
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hell-beast-burn_0
+      name: Dark-Bolt_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 74
-        height: 160
+        width: 64
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f06654ee49bc164d966eece94ba245d
-      internalID: 1379778947
+      spriteID: 892117ba5160ad4428ed030a6c518bb7
+      internalID: -1040210423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hell-beast-burn_1
+      name: Dark-Bolt_1
       rect:
         serializedVersion: 2
-        x: 74
+        x: 64
         y: 0
-        width: 74
-        height: 160
+        width: 64
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27e6ecc4df408e14fbe1248ece914a12
-      internalID: -239276408
+      spriteID: 2689f6a6b2ce9f149a67072fc3ed99a7
+      internalID: -1681445352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hell-beast-burn_2
+      name: Dark-Bolt_2
       rect:
         serializedVersion: 2
-        x: 148
+        x: 128
         y: 0
-        width: 74
-        height: 160
+        width: 64
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 072f1a7701b77584583890fd379e9226
-      internalID: -1209351278
+      spriteID: a12d987dfca869741b5a2e59d211233b
+      internalID: -1937130235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hell-beast-burn_3
+      name: Dark-Bolt_3
       rect:
         serializedVersion: 2
-        x: 222
+        x: 192
         y: 0
-        width: 74
-        height: 160
+        width: 64
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44f1d438c8f66824094e8fe209f8c912
-      internalID: 541986040
+      spriteID: 104153083e342974d9c520a174b4faef
+      internalID: -1053594040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hell-beast-burn_4
+      name: Dark-Bolt_4
       rect:
         serializedVersion: 2
-        x: 296
+        x: 256
         y: 0
-        width: 74
-        height: 160
+        width: 64
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46e031f3eb2dfe545b42ab0477f16ba3
-      internalID: 804109020
+      spriteID: 7a8ed01ac1e90c54d8ef920b14b727b9
+      internalID: 2013930879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hell-beast-burn_5
+      name: Dark-Bolt_5
       rect:
         serializedVersion: 2
-        x: 370
+        x: 320
         y: 0
-        width: 74
-        height: 160
+        width: 64
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,8 +236,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5915cb6d5c9c3e54c85e43dc13e2929c
-      internalID: 2123275673
+      spriteID: 5a820b85256f2494eaf90695f990571a
+      internalID: -419444486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark-Bolt_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762d7c465931cf642b072e766f1e8653
+      internalID: 2136840034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark-Bolt_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc26703aff1c33d49ae09e375fbb9e27
+      internalID: -597630636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark-Bolt_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b564e7812c7e6e344992deb8e19ab158
+      internalID: -1487995433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark-Bolt_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6fe83c85076d3409b53c6059533005
+      internalID: -298450497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark-Bolt_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9c065a671f7aa47bef57faa491d10d
+      internalID: 560596392
       vertices: []
       indices: 
       edges: []
@@ -253,12 +358,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      hell-beast-burn_5: 2123275673
-      hell-beast-burn_3: 541986040
-      hell-beast-burn_0: 1379778947
-      hell-beast-burn_2: -1209351278
-      hell-beast-burn_1: -239276408
-      hell-beast-burn_4: 804109020
+      Dark-Bolt_5: -419444486
+      Dark-Bolt_1: -1681445352
+      Dark-Bolt_9: -298450497
+      Dark-Bolt_3: -1053594040
+      Dark-Bolt_6: 2136840034
+      Dark-Bolt_2: -1937130235
+      Dark-Bolt_0: -1040210423
+      Dark-Bolt_7: -597630636
+      Dark-Bolt_8: -1487995433
+      Dark-Bolt_4: 2013930879
+      Dark-Bolt_10: 560596392
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

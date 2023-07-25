@@ -5,6 +5,7 @@ using UnityEngine;
 public class Spell : MonoBehaviour
 {
     [SerializeField] private LayerMask playerMask;
+    [SerializeField] private float damage;
 
     public void CastSpell()
     {
@@ -17,7 +18,7 @@ public class Spell : MonoBehaviour
         RaycastHit2D raycastHit = Physics2D.BoxCast(transform.position, new Vector2(2, 3), 0, Vector2.down, 0.1f, playerMask);
         if (raycastHit.collider != null && raycastHit.collider.tag == "Player")
         {
-            raycastHit.collider.GetComponent<Health>().TakeDamage(2.5f);
+            raycastHit.collider.GetComponent<Health>().TakeDamage(damage);
         }
     }
 

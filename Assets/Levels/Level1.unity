@@ -20200,6 +20200,7 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 64
+  damage: 2.5
 --- !u!212 &1299178199
 SpriteRenderer:
   m_ObjectHideFlags: 0
