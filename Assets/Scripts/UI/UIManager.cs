@@ -82,8 +82,14 @@ public class UIManager : MonoBehaviour
         SoundManager.instance.ChangeMusicVolume(0.2f);
     }
 
-    public void ClearProgress()
+    public void LoadGame()
+    {
+        StartGame();
+    }
+
+    public void StartNewGame()
     {
         PlayerPrefs.DeleteAll();
+        StartGame();
     }
 }
