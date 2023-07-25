@@ -14,12 +14,12 @@ public class Healthbar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        totalhealthBar.fillAmount = playerHealth.currentHealth / 10;
+        totalhealthBar.fillAmount = playerHealth.currentHealth / (playerHealth.GetComponent<Health>().startingHealth);
     }
 
     // Update is called once per frame
     void Update()
     {
-        currenthealthBar.fillAmount = playerHealth.currentHealth / 10;
+        currenthealthBar.fillAmount = playerHealth.currentHealth / (playerHealth.GetComponent<Health>().startingHealth);
     }
 }

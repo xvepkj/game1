@@ -16834,11 +16834,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8951037086345205702, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 62.28
+      value: 67.43
       objectReference: {fileID: 0}
     - target: {fileID: 8951037086345205702, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 21.38
+      value: 21.32
       objectReference: {fileID: 0}
     - target: {fileID: 8951037086345205702, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32506,9 +32506,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a853a5186021984e9887c050c638e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 0
+  attackCooldown: 2
   range: 3
-  colliderDistance: 0
+  colliderDistance: 0.1
   damage: 2.5
   boxCollider: {fileID: 371115337647344869}
   playerLayer:
@@ -32548,7 +32548,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.038473748, y: -0.078372255}
+  m_Offset: {x: -0.38696742, y: -0.19366255}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -32559,7 +32559,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35256606, y: 0.27846828}
+  m_Size: {x: 0.2974091, y: 0.5090489}
   m_EdgeRadius: 0
 --- !u!212 &371115337647344871
 SpriteRenderer:
@@ -32647,7 +32647,7 @@ MonoBehaviour:
   range: 3
   spells:
   - {fileID: 1299178195}
-  colliderDistance: 0.35
+  colliderDistance: 0.5
   damage: 1.25
   boxCollider: {fileID: 371115337647344869}
   dialoguePref: dialogueMiniBoss889631
