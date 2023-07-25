@@ -16,6 +16,9 @@ public class PlayerMovement : MonoBehaviour
     [Header("Sound")]
     [SerializeField] private AudioClip jumpSound;
 
+    [Header("Fall Point")]
+    [SerializeField] private Transform fallPoint;
+
     private void Awake() {
         // grab the references from your rigid body
         body = GetComponent<Rigidbody2D>();
@@ -34,6 +37,11 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void Update() {
+
+        if(SceneManager.GetActiveScene().buildIndex == 1 && fallPoint != null && gameObject.transform.position.y < fallPoint.position.y)
+        {
+            gameObject.GetComponent<Health>().TakeDamage(20000);
+        }
 
         float horizontalInput = Input.GetAxis("Horizontal");
 
