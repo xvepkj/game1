@@ -8013,7 +8013,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.478
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -35297,6 +35297,10 @@ PrefabInstance:
     - target: {fileID: 5172494151721072277, guid: c53df251d379e2541bd5c6173d5016ca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172494151721072278, guid: c53df251d379e2541bd5c6173d5016ca, type: 3}
+      propertyPath: attackCooldown
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c53df251d379e2541bd5c6173d5016ca, type: 3}
