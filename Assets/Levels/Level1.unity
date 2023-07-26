@@ -12663,6 +12663,10 @@ PrefabInstance:
       propertyPath: range
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9019260845340166652, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
+      propertyPath: attackSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ed6ecbb6221c0904ababc3203bc11ff1, type: 3}
     - target: {fileID: 9019260845340166653, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
       propertyPath: iFramesDuration
       value: 1
@@ -18527,11 +18531,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8951037086345205702, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.06
+      value: -9.61
       objectReference: {fileID: 0}
     - target: {fileID: 8951037086345205702, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.25
+      value: -1.16
       objectReference: {fileID: 0}
     - target: {fileID: 8951037086345205702, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.z

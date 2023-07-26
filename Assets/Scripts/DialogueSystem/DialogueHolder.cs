@@ -16,6 +16,7 @@ namespace DialogueSystem
             dialoguesOver = false;
             gameObject.SetActive(true);
             player.GetComponent<Animator>().SetBool("run", false);
+            player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             player.GetComponent<PlayerMovement>().enabled = false;
             player.GetComponent<PlayerAttack>().enabled = false;
 
