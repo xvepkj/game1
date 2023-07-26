@@ -12,6 +12,7 @@ public class PlayerAttack : MonoBehaviour
     [Header("melee attack params")] 
     [SerializeField] private LayerMask enemyLayer;
     [SerializeField] private float attackRange;
+    [SerializeField] private float meleeCooldown;
 
     [Header("Sounds")]
     [SerializeField] private AudioClip fireballSound;
@@ -21,6 +22,7 @@ public class PlayerAttack : MonoBehaviour
     private Animator anim;
     private PlayerMovement playerMovement;
     private float cooldownTimer = Mathf.Infinity;
+    private float meleeCooldownTimer = Mathf.Infinity;
 
     // Start is called before the first frame update
     private void Awake()
@@ -38,10 +40,10 @@ public class PlayerAttack : MonoBehaviour
         }
 
         cooldownTimer += Time.deltaTime;
+        meleeCooldownTimer += Time.deltaTime;   
 
-        if (Input.GetMouseButtonDown(0) && playerMovement.canAttack()) 
+        if (Input.GetMouseButtonDown(0) && playerMovement.canAttack() && meleeCooldownTimer > meleeCooldown) 
         {
-            SoundManager.instance.PlaySound(meleeSound);
             meleeAttack();
         }
     }
@@ -66,7 +68,9 @@ public class PlayerAttack : MonoBehaviour
 
     private void meleeAttack()
     {
+        SoundManager.instance.PlaySound(meleeSound);
         anim.SetTrigger("meleeAttack");
+        meleeCooldownTimer = 0;
 
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
 
