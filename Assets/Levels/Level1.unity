@@ -6992,6 +6992,10 @@ PrefabInstance:
       propertyPath: numberOfflashes
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 889094733725317722, guid: 114fbd9aaa0850f43884b4e8ccb65ae8, type: 3}
+      propertyPath: components.Array.data[0]
+      value: 
+      objectReference: {fileID: 438944299}
     - target: {fileID: 889094733725317724, guid: 114fbd9aaa0850f43884b4e8ccb65ae8, type: 3}
       propertyPath: m_Controller
       value: 
@@ -7479,6 +7483,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!223 &438944299 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 4913522528096346472, guid: bb14f004a2df38847bd8ddd0d60a8357, type: 3}
+  m_PrefabInstance: {fileID: 1985613434}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &440659772
 GameObject:
   m_ObjectHideFlags: 0
@@ -13525,6 +13534,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!223 &814412432 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 4913522528096346472, guid: bb14f004a2df38847bd8ddd0d60a8357, type: 3}
+  m_PrefabInstance: {fileID: 444176118}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &820823904 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8951037086345205699, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
@@ -18531,11 +18545,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8951037086345205702, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.61
+      value: 4.76
       objectReference: {fileID: 0}
     - target: {fileID: 8951037086345205702, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.16
+      value: 18.86
       objectReference: {fileID: 0}
     - target: {fileID: 8951037086345205702, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18635,11 +18649,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8951037087455931557, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.548
+      value: 0.555
       objectReference: {fileID: 0}
     - target: {fileID: 8951037087455931557, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.099
+      value: 0.072
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
@@ -24852,6 +24866,10 @@ PrefabInstance:
       propertyPath: numberOfflashes
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 889094733725317722, guid: 114fbd9aaa0850f43884b4e8ccb65ae8, type: 3}
+      propertyPath: components.Array.data[0]
+      value: 
+      objectReference: {fileID: 814412432}
     - target: {fileID: 889094733725317725, guid: 114fbd9aaa0850f43884b4e8ccb65ae8, type: 3}
       propertyPath: m_Size.x
       value: 0.13678646

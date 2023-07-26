@@ -68,6 +68,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void meleeAttack()
     {
+        if (gameObject.GetComponent<Rigidbody2D>().velocity != Vector2.zero) return;
         SoundManager.instance.PlaySound(meleeSound);
         anim.SetTrigger("meleeAttack");
         meleeCooldownTimer = 0;
