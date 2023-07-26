@@ -17,6 +17,12 @@ public class UIManager : MonoBehaviour
     [Header("Pause")]
     [SerializeField] private GameObject pauseScreen;
 
+    [Header("Main Menu")]
+    [SerializeField] private GameObject mainMenuUI;
+
+    [Header("Controls")]
+    [SerializeField] private GameObject controlsUI;
+
     private void Awake()
     {
         gameOverScreen.SetActive(false); 
@@ -91,5 +97,11 @@ public class UIManager : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
         StartGame();
+    }
+
+    public void ControlsOpen(bool controlOpen)
+    {
+        controlsUI.SetActive(controlOpen);
+        mainMenuUI.SetActive(!controlOpen);
     }
 }
