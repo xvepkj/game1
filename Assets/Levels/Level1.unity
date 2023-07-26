@@ -35444,6 +35444,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 53935130}
     m_Modifications:
     - target: {fileID: 4913522527741941787, guid: bb14f004a2df38847bd8ddd0d60a8357, type: 3}
+      propertyPath: offsetY
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913522527741941787, guid: bb14f004a2df38847bd8ddd0d60a8357, type: 3}
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 1951043379}
