@@ -20997,6 +20997,8 @@ MonoBehaviour:
   gameOverScreen: {fileID: 364332862}
   gameOverSound: {fileID: 8300000, guid: 81ae2a7e80c03cb4da75e6b4fc384b29, type: 3}
   pauseScreen: {fileID: 1391906201}
+  mainMenuUI: {fileID: 0}
+  controlsUI: {fileID: 0}
 --- !u!1 &1194619744
 GameObject:
   m_ObjectHideFlags: 0

@@ -44,7 +44,11 @@ public class PlayerAttack : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && playerMovement.canAttack() && meleeCooldownTimer > meleeCooldown) 
         {
-            meleeAttack();
+            meleeAttack("meleeAttack");
+        }
+        if (Input.GetKey(KeyCode.R) && playerMovement.canAttack() && meleeCooldownTimer > meleeCooldown)
+        {
+            meleeAttack("melee2");
         }
     }
 
@@ -66,11 +70,11 @@ public class PlayerAttack : MonoBehaviour
         return 0;
     }
 
-    private void meleeAttack()
+    private void meleeAttack(string animTrigger)
     {
         if (gameObject.GetComponent<Rigidbody2D>().velocity != Vector2.zero) return;
         SoundManager.instance.PlaySound(meleeSound);
-        anim.SetTrigger("meleeAttack");
+        anim.SetTrigger(animTrigger);
         meleeCooldownTimer = 0;
 
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
