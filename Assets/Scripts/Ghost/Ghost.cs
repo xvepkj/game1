@@ -8,20 +8,18 @@ public class Ghost : MonoBehaviour
 {
     [SerializeField] private DialogueHolder holder;
     [SerializeField] private Animator anim;
-    [SerializeField] private string ghostPref;
+    [SerializeField] public string ghostPref;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
-        Debug.Log(holder);
-        if(PlayerPrefs.GetInt(ghostPref, 0) == 0)
-        {
-            Debug.Log("Ghost Pref not set");
-            gameObject.SetActive(true);
-            StartCoroutine(holder.dialogueSequence());
-            StartCoroutine(Disappear());
-        }
-        else gameObject.SetActive(false);
+    }
+
+    public void playDialogueAndDisappear()
+    {
+        gameObject.SetActive(true);
+        StartCoroutine(holder.dialogueSequence());
+        StartCoroutine(Disappear());
     }
 
     private IEnumerator Disappear()

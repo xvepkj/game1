@@ -18545,11 +18545,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8951037086345205702, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.76
+      value: -9.39
       objectReference: {fileID: 0}
     - target: {fileID: 8951037086345205702, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.86
+      value: -1.25
       objectReference: {fileID: 0}
     - target: {fileID: 8951037086345205702, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18587,6 +18587,10 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 249ac4a35485db84aad1e86440755e37, type: 2}
+    - target: {fileID: 8951037086345205704, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
+      propertyPath: ghost
+      value: 
+      objectReference: {fileID: 1841816307}
     - target: {fileID: 8951037086345205704, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: fallPoint
       value: 
@@ -31269,7 +31273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1841816304
 Transform:
   m_ObjectHideFlags: 0

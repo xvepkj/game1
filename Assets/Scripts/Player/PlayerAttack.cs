@@ -44,6 +44,7 @@ public class PlayerAttack : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && playerMovement.canAttack() && meleeCooldownTimer > meleeCooldown) 
         {
+            Debug.Log("punch");
             meleeAttack("meleeAttack");
         }
         if (Input.GetKey(KeyCode.R) && playerMovement.canAttack() && meleeCooldownTimer > meleeCooldown)
@@ -72,7 +73,8 @@ public class PlayerAttack : MonoBehaviour
 
     private void meleeAttack(string animTrigger)
     {
-        if (gameObject.GetComponent<Rigidbody2D>().velocity != Vector2.zero) return;
+        //if (gameObject.GetComponent<Rigidbody2D>().velocity != Vector2.zero) return;
+       // Debug.Log("velocity zero");
         SoundManager.instance.PlaySound(meleeSound);
         anim.SetTrigger(animTrigger);
         meleeCooldownTimer = 0;

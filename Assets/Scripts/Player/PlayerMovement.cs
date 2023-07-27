@@ -7,7 +7,9 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]private LayerMask groundLayer;
     [SerializeField] private LayerMask movingPlatformLayer;
-    [SerializeField]private float speed; 
+    [SerializeField]private float speed;
+
+    [SerializeField] private Ghost ghost;
     private Rigidbody2D body;
     private BoxCollider2D boxCollider;
     private Animator anim;
@@ -26,6 +28,10 @@ public class PlayerMovement : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
 
         SetPlayerPosition();
+        if (ghost != null && PlayerPrefs.GetInt(ghost.ghostPref, 0) == 0)
+        {
+            ghost.playDialogueAndDisappear();
+        }
     }
 
     private void SetPlayerPosition()

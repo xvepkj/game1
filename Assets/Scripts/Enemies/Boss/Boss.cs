@@ -14,6 +14,7 @@ public class Boss : MonoBehaviour
     [SerializeField] private float range;
     [SerializeField] private GameObject[] spells;
     [SerializeField] private GameObject healthBar;
+    [SerializeField] private Ghost ghost;
 
     [Header("Collider Parameters")]
     [SerializeField] private float colliderDistance;
@@ -46,6 +47,7 @@ public class Boss : MonoBehaviour
 
         if (PlayerInSight())
         {
+            if(gameObject.GetComponent<Health>().currentHealth > 0) healthBar.SetActive(true);
             if (PlayerPrefs.GetInt(dialoguePref, 0) == 0)
             {
                 PlayerPrefs.SetInt(dialoguePref, 1);
@@ -58,6 +60,7 @@ public class Boss : MonoBehaviour
                 spellAttack();
             }
         }
+        else healthBar.SetActive(false);
     }
 
     private bool PlayerInSight()
@@ -108,5 +111,6 @@ public class Boss : MonoBehaviour
     public void DisableComponents()
     {
         healthBar.SetActive(false);
+        ghost.playDialogueAndDisappear();
     }
 }
