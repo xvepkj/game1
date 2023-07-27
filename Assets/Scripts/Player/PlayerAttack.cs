@@ -24,6 +24,8 @@ public class PlayerAttack : MonoBehaviour
     private float cooldownTimer = Mathf.Infinity;
     private float meleeCooldownTimer = Mathf.Infinity;
 
+    public bool isAttacking = false; 
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -73,6 +75,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void meleeAttack(string animTrigger)
     {
+        isAttacking = true;
         //if (gameObject.GetComponent<Rigidbody2D>().velocity != Vector2.zero) return;
        // Debug.Log("velocity zero");
         SoundManager.instance.PlaySound(meleeSound);
@@ -85,6 +88,7 @@ public class PlayerAttack : MonoBehaviour
         {
             enemy.GetComponent<Health>().TakeDamage(2.5f);
         }
+        isAttacking = false;
     }
 
     private void OnDrawGizmos()

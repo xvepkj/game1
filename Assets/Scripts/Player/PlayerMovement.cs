@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]private float speed;
 
     [SerializeField] private Ghost ghost;
+    private PlayerAttack playerAttack; 
     private Rigidbody2D body;
     private BoxCollider2D boxCollider;
     private Animator anim;
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
+        playerAttack = GetComponent<PlayerAttack>();
 
         SetPlayerPosition();
         if (ghost != null && PlayerPrefs.GetInt(ghost.ghostPref, 0) == 0)
@@ -52,7 +54,8 @@ public class PlayerMovement : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
 
         // Left-Right movement
-        body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
+        if (!playerAttack.isAttacking) body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
+        else body.velocity = Vector2.zero;
 
         // Flip Player left-right
         if(horizontalInput > 0.01f)
@@ -71,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
 
 
         // Set animator parameters 
-        anim.SetBool("run", horizontalInput != 0);
+        anim.SetBool("run", horizontalInput != 0 && !playerAttack.isAttacking);
         anim.SetBool("grounded", isGrounded());
 
     }
