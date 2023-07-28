@@ -57,6 +57,11 @@ public class RangedEnemy : MonoBehaviour
             new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z), 0, Vector2.left
             , 0, playerLayer);
 
+        if (hit.collider != null && hit.collider.transform.position.x > transform.position.x && transform.localScale.x < 0)
+            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+        if (hit.collider != null && hit.collider.transform.position.x < gameObject.transform.position.x && gameObject.transform.localScale.x > 0)
+            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+
         return hit.collider != null;
     }
 

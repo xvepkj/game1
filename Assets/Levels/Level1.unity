@@ -7051,6 +7051,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 94fb9653a387cea47a99ce8dfaa21fc7, type: 3}
     - target: {fileID: 889094733725317718, guid: 114fbd9aaa0850f43884b4e8ccb65ae8, type: 3}
+      propertyPath: range
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 889094733725317718, guid: 114fbd9aaa0850f43884b4e8ccb65ae8, type: 3}
+      propertyPath: colliderDistance
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 889094733725317718, guid: 114fbd9aaa0850f43884b4e8ccb65ae8, type: 3}
       propertyPath: fireballs.Array.size
       value: 10
       objectReference: {fileID: 0}
@@ -12748,12 +12756,16 @@ PrefabInstance:
       objectReference: {fileID: 22100000, guid: bb4678f8252d9c540a5cbab44185ee27, type: 2}
     - target: {fileID: 9019260845340166652, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
       propertyPath: range
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9019260845340166652, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
       propertyPath: attackSound
       value: 
       objectReference: {fileID: 8300000, guid: ed6ecbb6221c0904ababc3203bc11ff1, type: 3}
+    - target: {fileID: 9019260845340166652, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
+      propertyPath: colliderDistance
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9019260845340166653, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
       propertyPath: iFramesDuration
       value: 1
@@ -24894,11 +24906,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 889094733725317718, guid: 114fbd9aaa0850f43884b4e8ccb65ae8, type: 3}
       propertyPath: range
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 889094733725317718, guid: 114fbd9aaa0850f43884b4e8ccb65ae8, type: 3}
       propertyPath: attackCooldown
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 889094733725317718, guid: 114fbd9aaa0850f43884b4e8ccb65ae8, type: 3}
+      propertyPath: colliderDistance
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 889094733725317720, guid: 114fbd9aaa0850f43884b4e8ccb65ae8, type: 3}
       propertyPath: m_LocalScale.x
@@ -32512,6 +32528,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 22100000, guid: abd16fe70612eb64ebeec53e0092465a, type: 2}
+    - target: {fileID: 9019260845340166652, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
+      propertyPath: range
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9019260845340166652, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
+      propertyPath: colliderDistance
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9019260845340166654, guid: 8e95ea6c7d5d52b49a6379876519a1f9, type: 3}
       propertyPath: m_Name
       value: MeleeEnemy
