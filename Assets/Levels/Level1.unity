@@ -7743,7 +7743,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4913522527741941787, guid: bb14f004a2df38847bd8ddd0d60a8357, type: 3}
       propertyPath: offsetX
-      value: 2.3
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: 4913522527741941787, guid: bb14f004a2df38847bd8ddd0d60a8357, type: 3}
       propertyPath: offsetY
@@ -11247,7 +11247,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4913522527741941787, guid: bb14f004a2df38847bd8ddd0d60a8357, type: 3}
       propertyPath: offsetX
-      value: 3.4
+      value: 2.4
       objectReference: {fileID: 0}
     - target: {fileID: 4913522527741941787, guid: bb14f004a2df38847bd8ddd0d60a8357, type: 3}
       propertyPath: offsetY
@@ -17197,7 +17197,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4913522527741941787, guid: bb14f004a2df38847bd8ddd0d60a8357, type: 3}
       propertyPath: offsetX
-      value: 2.5
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 4913522527741941787, guid: bb14f004a2df38847bd8ddd0d60a8357, type: 3}
       propertyPath: offsetY
@@ -33812,7 +33812,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4913522527741941787, guid: bb14f004a2df38847bd8ddd0d60a8357, type: 3}
       propertyPath: offsetX
-      value: 2.2
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 4913522527741941787, guid: bb14f004a2df38847bd8ddd0d60a8357, type: 3}
       propertyPath: offsetY
@@ -35717,8 +35717,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackCooldown: 2
-  range: 3
-  colliderDistance: 0.1
+  range: 5
+  colliderDistance: 0
   damage: 2.5
   boxCollider: {fileID: 371115337647344869}
   playerLayer:
@@ -35854,10 +35854,10 @@ MonoBehaviour:
     m_Bits: 64
   spellDelay: 1
   attackCooldown: 2
-  range: 3
+  range: 4
   spells:
   - {fileID: 1299178195}
-  colliderDistance: 0.5
+  colliderDistance: 0.36
   damage: 1.25
   boxCollider: {fileID: 371115337647344869}
   dialoguePref: dialogueMiniBoss889631
