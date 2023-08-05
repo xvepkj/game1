@@ -18716,7 +18716,7 @@ PrefabInstance:
       objectReference: {fileID: 2046523879}
     - target: {fileID: 8951037086345205707, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: startingHealth
-      value: 1000
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8951037087455931557, guid: 8da9ac1eacaa6cc41999469a459a642a, type: 3}
       propertyPath: m_LocalPosition.x
