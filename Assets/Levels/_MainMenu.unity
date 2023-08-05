@@ -524,6 +524,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   options:
   - {fileID: 1003605161}
+  - {fileID: 1330977340}
+  - {fileID: 1085773959}
   - {fileID: 1044422289}
   changeSound: {fileID: 8300000, guid: f31162220f3914549b109b4a01c24e42, type: 3}
   interactSound: {fileID: 8300000, guid: 10dace32d3809224ea3cdfb58dd3b4dd, type: 3}
